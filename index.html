@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script>
+			function spook() {
+				var num_ghosts = 100;
+				var ghost_id = Math.floor(num_ghosts * Math.random());
+				var image_src = "./images/ghost" + ghost_id + ".png";
+				document.getElementById("lantern").src = image_src;
+			}
+		</script>
+	<style>
+</style>
+	</head>
+	<body onload="spook()" style="background-color:black;">
+		<center>
+			<img id="lantern" alt="ghost photo">
+		</center>
+	</body>
+</html>
