@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script>
-			function spook() {
-				var num_ghosts = 100;
-				var ghost_id = Math.floor(num_ghosts * Math.random());
-				var image_src = "./images/ghost" + ghost_id + ".png";
-				document.getElementById("lantern").src = image_src;
-			}
-		</script>
-	<style>
+<head>
+<title>this ghost does not exist</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+img {width:100%;height:auto}
 </style>
-	</head>
-	<body onload="spook()" style="background-color:black;">
-		<center>
-			<img id="lantern" alt="ghost photo">
-		</center>
-	</body>
+<script>function spook(){document.getElementById("lantern").src="./images/ghost"+Math.floor(100*Math.random())+".png"}</script>
+</head>
+<body onload="spook()" style="background-color:black;">
+<center>
+<img id="lantern" alt="ghost photo">
+<p><a href="https://github.com/vilimus/thisghostdoesnotexist/tree/gh-pages" style="color:dimgray;text-decoration:none">about</a></p>
+</center>
+</body>
 </html>
