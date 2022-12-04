@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>this ghost does not exist</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-img {max-width:100%}
-</style>
-<script>function spook(){document.getElementById("lantern").src="./images/ghost"+Math.floor(1000*Math.random())+".png"}</script>
-</head>
-<body onload="spook()" style="background-color:black;">
-<center>
-<a href="https://vilimus.github.io/thisghostdoesnotexist/"><img id="lantern" alt="ghost photo"></a>
-<p><a href="https://github.com/vilimus/thisghostdoesnotexist/" style="color:dimgray;text-decoration:none">about</a></p>
-</center>
-</body>
+  <head>
+    <title>this ghost does not exist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      img {
+        max-width: 100%
+      }
+    </style>
+    <script>
+      function spook() {
+        document.getElementById("lantern").src = "./images/ghost" + Math.floor(1000*Math.random()) + ".png"
+      }
+    </script>
+  </head>
+  <body onload="spook()" style="background-color:black;">
+    <center>
+      <a href="https://vilimus.github.io/thisghostdoesnotexist/"><img id="lantern" alt="ghost photo"></a>
+      <!--
+        <p><a href="https://github.com/vilimus/thisghostdoesnotexist/" style="color:dimgray;text-decoration:none">about</a></p>
+      -->
+    </center>
+  </body>
 </html>
